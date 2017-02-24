@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/client/css/demo.css"/>
+
+
+
+  </head>
+<body>
+
+
+  <div id="vueapp">
+    <div class="search-wrapper">
+      <input type="text" v-model="keyword" placeholder="Search Title..."/>
+      <label>Search Title</label>
+    </div>
+    <div class="wrapper">
+      <div class="card" v-for="post in filteredList">
+        <a v-bind:href="post.link" target="_blank">
+          <img v-bind:src="post.img" />
+          {{ post.title }}
+        </a>
+       </div>
+    </div>
+  <!--   <input type="text" v-model="keyword"/>
+    {{ keyword }}
+    <div class="box" v-bind:style="{backgroundColor: keyword}"></div> -->
+  <!--   <div class="box" v-bind:class="{ green: onOff, hotpink: !onOff }"></div> -->
+    <!--button v-on:click>Toggle</button-->
+  <!--   <button @click="toggleOnOff()">Toggle</button> -->
+  </div>
+
+  <script src="/client/scripts/vue.js"></script>
+  <script src="/client/dist/main.js"></script>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</body>
+
+</html>
