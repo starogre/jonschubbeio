@@ -1,2 +1,2 @@
-# starogre.github.io
+# jonschubbe.io
 Jon Schubbe's Personal Website
