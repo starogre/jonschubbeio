@@ -5,8 +5,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-top: 16px;
-  margin-bottom: 16px; 
-  background: #000000}
+  margin-bottom: 16px; }
 
 div#vueapp {
   display: flex;
